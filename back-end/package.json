@@ -5,18 +5,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --watch ./index.ts"
+    "dev": "tsx --env-file=.env --watch ./index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
     "@types/node": "^24.5.2",
+    "prisma": "^6.16.2",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "@prisma/client": "^6.16.2",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2"
   }
 }
