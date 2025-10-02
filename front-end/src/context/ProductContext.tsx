@@ -20,7 +20,6 @@ const ProductProvider = ({ children }: { children: ReactNode }) => {
     const response = await fetch("http://localhost:3000/get-menu-items");
 
     const data = await response.json();
-    console.log(data.response);
 
     if (!response.ok) {
       console.log("Erro ao buscar itens do cardápio");

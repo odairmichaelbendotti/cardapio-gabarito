@@ -91,7 +91,7 @@ export const OrderController = {
         createdAt: order?.createdAt,
         entrega: order?.entrega ? order?.entrega : null,
         status: order?.status,
-        username: orders[i]?.cartItem[i]?.user?.name,
+        username: order?.cartItem[0]?.user?.name,
       };
 
       info.push(orderItems);
